@@ -1,0 +1,103 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans     
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+    http://www.springframework.org/schema/mvc 
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd    ">	
+
+		<!-- Property  files for database -->
+			 <bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+			        <property name="locations">
+			            <list>
+			                <value>/WEB-INF/properties/database.properties</value>
+			            </list>
+			        </property>
+			</bean>
+		
+		<!-- Database configuration -->
+		  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		  <property name="driverClassName" value="${pos.driverClassName}"></property>
+		  <property name="url" value="${pos.url}"></property>
+		  <property name="username" value="${pos.username}"></property>
+		  <property name="password" value="${pos.password}"></property>
+		  <property name="validationQuery" >
+		  <value>SELECT 1</value>
+		  </property>
+			<property name="testOnBorrow" value="true" /> 
+		  <!-- <property name="defaultAutoCommit" value="false"></property> -->
+	<!--  <property name="initialSize"></property>  
+		  <property name="minIdle"></property>		  
+		  <property name="maxActive"></property> -->
+		  </bean> 
+		
+		<!-- Jdbc Template -->
+		<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		  <property name="dataSource" ref="dataSource"></property>
+		</bean>
+		<bean id="securityCheck" class="com.jaw.security.SecurityCheck">
+		</bean>
+		<bean id="jawSecurityCheck" class="com.jaw.security.JawSecurityCheck">
+		</bean>
+		<!-- CommonCodeDao for loads value into application cache  -->
+		<bean id="applicationContextHelper" class="com.pos.framework.listener.AppServletContextListenerHelper">
+		</bean>
+		<!-- CommonCodeDao for loads value into application cache  -->
+		<bean id="commonCodeDao" class="com.pos.framework.appCache.dao.ApplicationCacheCommonCodeDao">
+		 <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+		</bean>
+		
+		<!-- PropertyMaintenanceDao for loads value into application cache  -->
+		<bean id="propertyMaintenanceDao" class="com.pos.framework.appCache.dao.ApplicationCachePropertyMaintenanceDao">
+		 <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+		</bean>
+		<bean id="tableMaintenanceDao" class="com.pos.framework.appCache.dao.ApplicationCacheTableMaintenanceDao">
+		 <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+		</bean>
+		<!-- SMSMaintenanceDao for loads value into application cache  -->
+		<bean id="smsMaintenanceDao" class="com.pos.framework.appCache.dao.ApplicationCacheSMSPropertyDao">
+		 <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+		</bean>
+		<!-- ErrorCodeDao for loads value into application cache  -->
+		<bean id="errorCodeDao" class="com.pos.framework.appCache.dao.ApplicationCacheErrorCodeDao">
+		 <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+		</bean>
+		
+			<!-- ClearSessionDao for loads value into application cache  -->
+		<bean id="clearSessionDao" class="com.pos.framework.sessCache.dao.ClearSessionDao">
+		 <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+		</bean>
+		
+		<!-- Menu profile for loads value into application cache  -->
+		<bean id="menuProfile" class="com.pos.framework.appCache.dao.ApplicationCacheProfileOptionLinking">
+		 <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+		</bean>
+		 
+			<!-- Standard Section for loads value into application cache  -->
+		<!-- <bean id="academicTerm"
+		class="com.pos.framework.appCache.dao.ApplicationCacheAcademicTermDao">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean> -->
+		
+		<!-- Application cache for loads value into application cache  -->
+		<bean id="applicationCache" class="com.pos.framework.appCache.ApplicationCache">
+		</bean>
+			<!-- Application cache for loads value into application cache  -->
+		<bean id="umplUtil" class="com.pos.common.util.MenuProfileUtil">
+		</bean>
+	<!-- CommonCodeDao for Student Group list DAO  -->
+		<!-- <bean id="studntGrpListdao" class="com.pos.common.util.dao.StudentGroupListUtilDAO">
+		 <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+		</bean> -->
+		
+</beans>

@@ -1,0 +1,112 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+
+	xmlns:tx="http://www.springframework.org/schema/tx" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans     
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context 
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+   http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+    http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc.xsd
+    ">
+    
+	<mvc:annotation-driven />
+
+	<context:component-scan base-package="com.pos" />
+
+
+	<!-- Add this tag to enable annotation driven transactions -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="/WEB-INF/properties/pos" />
+		<property name="cacheSeconds" value="3000" />
+	</bean>
+	<!-- Configure the multipart resolver -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="9999999" />
+	</bean>
+	<!-- <bean class="org.springframework.web.servlet.view.XmlViewResolver"
+		p:location="/WEB-INF/jasper-views.xml" p:order="0" /> -->
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass">
+			<value>
+				org.springframework.web.servlet.view.tiles2.TilesView
+			</value>
+		</property>
+		<property name="order" value="1"></property>
+	</bean>
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles/tiles-setup.xml</value>
+				<value>/WEB-INF/tiles/tiles-admin.xml</value>
+				<value>/WEB-INF/tiles/tiles-batch.xml</value>
+				<value>/WEB-INF/tiles/tiles-common.xml</value>
+				<value>/WEB-INF/tiles/tiles-core.xml</value>
+				<value>/WEB-INF/tiles/tiles-login.xml</value>
+				<value>/WEB-INF/tiles/tiles-proAdm.xml</value>
+				<value>/WEB-INF/tiles/tiles-user.xml</value>				
+				<value>/WEB-INF/tiles/tiles-communication.xml</value>
+				<!-- Retail POS -->
+				<value>/WEB-INF/tiles/tiles-product.xml</value>				
+				<value>/WEB-INF/tiles/tiles-till.xml</value>
+				<value>/WEB-INF/tiles/tiles-customer.xml</value>
+				<value>/WEB-INF/tiles/tiles-possale.xml</value>
+				<value>/WEB-INF/tiles/tiles-report.xml</value>
+				<value>/WEB-INF/tiles/tiles-settings.xml</value>
+				<value>/WEB-INF/tiles/tiles-accessoriesList.xml</value>				
+				<value>/WEB-INF/tiles/tiles-repair.xml</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- <property name="prefix" value="/WEB-INF/jsp/" /> -->
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+		<property name="order" value="2"></property>
+	</bean>
+
+
+
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver"
+		p:order="2" />
+
+	<bean
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver"
+		p:order="2" p:defaultErrorView=".pos.error">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="org.springframework.dao.DataAccessException">.pos.exception</prop>
+				<prop key="org.springframework.dao.EmptyResultDataAccessException">.pos.exception</prop>
+				<prop key="com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException">.pos.exception</prop>
+				<prop key="org.springframework.jdbc.BadSqlGrammarException">.pos.exception</prop>
+				<prop key="java.sql.SQLException">.pos.exception</prop>
+			</props>
+		</property>
+	</bean>
+
+	<aop:aspectj-autoproxy />
+	<bean class="com.pos.framework.logging.LoggingAspect"></bean>
+
+
+
+</beans>

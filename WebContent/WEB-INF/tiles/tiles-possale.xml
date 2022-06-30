@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name=".pos.possale" extends="base.definition">
+		<put-attribute name="title" value="POS Sale" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/possale/pos_sale.jsp" />
+	</definition>
+	<definition name=".pos.possaleInvoice" extends="base.definition">
+		<put-attribute name="title" value="POS Invoice" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/possale/pos_invoice.jsp" />
+	</definition>
+	<definition name=".pos.tradein" extends="base.definition">
+		<put-attribute name="title" value="Trade In" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/possale/tradein.jsp" />
+	</definition>
+		<definition name=".pos.tradeinList" extends="base.definition">
+		<put-attribute name="title" value="Trade In List" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/possale/tradeinList.jsp" />
+	</definition>
+	<definition name=".pos.tradeinInvoice" extends="base.definition">
+		<put-attribute name="title" value="Trade In Invoice" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/possale/tradein_invoice.jsp" />
+	</definition>
+</tiles-definitions>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<info>PropertyManagement Table Value</info>
+	<uri>PropertyManagementValue</uri>
+	<tag>
+		<name>value</name>
+		<tagclass>com.pos.common.customTag.PropertyManagementValue</tagclass>
+		<info>Substring function.</info>
+		<attribute>
+			<name>propertyId</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+      <name>branchId</name>
+      <rtexprvalue>true</rtexprvalue>
+      
+  </attribute>
+<attribute>
+			<name>value</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>result</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib> 

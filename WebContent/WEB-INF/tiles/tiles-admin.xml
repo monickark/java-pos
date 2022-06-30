@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+        <tiles-definitions>
+        <!-- Admin Package-->
+<definition name=".pos.inst-master" extends="base.definition">
+		<put-attribute name="title" value="Institute Master " />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/inst_master.jsp" />
+	</definition>
+	
+	<definition name=".pos.request" extends="base.definition">
+		<put-attribute name="title" value="Requests List" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/request_list.jsp" />
+	</definition>
+	<definition name=".pos.ViewSingleStaffBranchAdmin" extends="base.definition">
+		<put-attribute name="title" value="Branch Admin Details" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/admin/view_single_staff_branch_admin.jsp" />
+	</definition>
+	<definition name=".pos.pendingRequest" extends="base.definition">
+		<put-attribute name="title" value="Process Request" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/admin/pending_request_list.jsp" />
+	</definition>
+	<definition name=".pos.branchMaster" extends="base.definition">
+	<put-attribute name="title" value="BranchMaster"></put-attribute>
+	<put-attribute name="body" value="/WEB-INF/jsp/admin/branch_master_list.jsp"></put-attribute>	
+	</definition>
+	<definition name=".pos.branchDetails" extends="base.definition">
+	<put-attribute name="title" value="BranchMaster Details"></put-attribute>
+	<put-attribute name="body" value="/WEB-INF/jsp/admin/branch_details.jsp"></put-attribute>	
+	</definition>
+	<definition name=".pos.branchEdit" extends="base.definition">
+	<put-attribute name="title" value="BranchMaster Edit"></put-attribute>
+	<put-attribute name="body" value="/WEB-INF/jsp/admin/branch_master_edit.jsp"></put-attribute>	
+	</definition>
+	<definition name=".pos.branchMasterAdd" extends="base.definition">
+	<put-attribute name="title" value="BranchMaster Add"></put-attribute>
+	<put-attribute name="body" value="/WEB-INF/jsp/admin/branch_master_add.jsp"></put-attribute>	
+	</definition>
+	<definition name=".pos.dataLog" extends="base.definition">
+		<put-attribute name="title" value="Data Log" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/data_log_list.jsp" />
+	</definition>	
+	<definition name=".pos.dataLogDetails" extends="base.definition">
+		<put-attribute name="title" value="Data Log Details" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/data_log_details.jsp" />
+	</definition>
+	<!-- Event log page linking -->
+	<definition name=".pos.eventLog" extends="base.definition">
+		<put-attribute name="title" value="Event Log" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/event_log_list.jsp" />
+	</definition>
+	<!-- SMS Configuration List -->
+	<definition name=".pos.smsconfig" extends="base.definition">
+		<put-attribute name="title" value="SMS Configuration" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/sms_configuration_list.jsp" />
+	</definition>
+	<!-- Student promotion -->
+	<definition name=".pos.studentPromotion" extends="base.definition">
+		<put-attribute name="title" value="Student Promotion" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/student_promotion.jsp" />
+	</definition>        </tiles-definitions>

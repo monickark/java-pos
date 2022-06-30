@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+        <tiles-definitions>
+        <definition name=".pos.tablemaintenance" extends="base.definition">
+		<put-attribute name="title" value="Table Maintenance" />
+		<put-attribute name="body" value="/WEB-INF/jsp/prodAdm/table_maintenance.jsp" />
+	</definition>
+	<definition name=".pos.cocd" extends="base.definition">
+		<put-attribute name="title" value="Common Code Maintenance" />
+		<put-attribute name="body" value="/WEB-INF/jsp/prodAdm/cocd.jsp" />
+	</definition>
+		<definition name=".pos.refAppCache" extends="base.definition">
+		<put-attribute name="title" value="Refresh Application cache" />
+		<put-attribute name="body" value="/WEB-INF/jsp/prodAdm/refreshAppCache.jsp" />
+	</definition>
+        </tiles-definitions>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file>
+	
+		<recordFormat>
+			<rectype>TransportDetailsVO</rectype>
+			<!--For product use 'P' & for Custom use 'C' -->
+			<recordProductOrCustom>PROD</recordProductOrCustom>
+			<fieldList>
+				<field_Name_Product>S.No</field_Name_Product>
+				<!-- <filed_Name_Custom>Admis no</filed_Name_Custom> -->
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Integer</field_Type>
+				<field_Size>4</field_Size>
+				 <field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom> 
+				<field_Mandatory_Custom_Criteria>S.No
+				</field_Mandatory_Custom_Criteria>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<default_Value></default_Value>
+				<field_Order>1</field_Order>
+				<field_Property_Name>SerialNoForExcelUpdate</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>instId</field_Name_Product>
+				<!-- <filed_Name_Custom>Admis no</filed_Name_Custom> -->
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Text</field_Type>
+				<field_Size>3</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				 <exclude_From_Dwnld>YES</exclude_From_Dwnld> 
+				<default_Value>MYS</default_Value>
+				<field_Order>1</field_Order>
+				<field_Property_Name>instId</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<field_Primary_Key>Y</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> 
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>branchId</field_Name_Product>
+				<!-- <filed_Name_Custom>Year</filed_Name_Custom> -->
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Text</field_Type>
+				<field_Size>3</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<cocd_Type>std</cocd_Type>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<default_Value>MYS</default_Value>
+				<field_Order>2</field_Order>
+				<field_Property_Name>branchId</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<field_Primary_Key>Y</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList>
+						
+			<fieldList>
+				<field_Name_Product>studentAdmisNo</field_Name_Product>
+				<filed_Name_Custom>studentAdmisNo</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>115</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>N</default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>studentAdmisNo</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<field_Primary_Key>Y</field_Primary_Key>
+				<field_Unique_key>Y</field_Unique_key>
+				<field_DB_ColumnName>STUDENT_ADMIS_NO</field_DB_ColumnName>
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>academicYear</field_Name_Product>
+				<filed_Name_Custom>academicYear</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+			<!--  <exclude_From_Dwnld>YES</exclude_From_Dwnld>  -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>academicYear</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>modeOfTransport</field_Name_Product>
+				<filed_Name_Custom>modeOfTransport</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>DN</default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>modeOfTransport</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>vehicleNo</field_Name_Product>
+				<filed_Name_Custom>vehicleNo</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>DN</default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>vehicleNo</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>pickupPoint</field_Name_Product>
+				<filed_Name_Custom>pickupPoint</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>25</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>DN</default_Value>
+			<!-- 	<exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>pickupPoint</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>droppingPoint</field_Name_Product>
+				<filed_Name_Custom>droppingPoint</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>25</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>07-03-2013</default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>droppingPoint</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>pickupAssSalut</field_Name_Product>
+				<filed_Name_Custom>pickupAssSalut</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>DN</default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>pickupAssSalut</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>pickupAssistantName</field_Name_Product>
+				<filed_Name_Custom>pickupAssistantName</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>DN</default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>pickupAssName</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<!-- <fieldList>
+				<field_Name_Product>pickupAssPhotoRefno</field_Name_Product>
+				<filed_Name_Custom>pickupAssPhotoRefno</filed_Name_Custom>
+				fieed type should be : Date,MobileNumber,Pincode,Integer,SimpleText,SpecialText, 
+					Text,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>Integer</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>DN</default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>pickupAssPhotoRefno</field_Property_Name>
+				<field_Class_Name>TransportDetailsVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList>			 -->
+		</recordFormat>
+
+</file>

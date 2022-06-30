@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+        <tiles-definitions>
+        <definition name=".pos.requestSubmitted" >
+		<put-attribute name="title" value="Requests Submitted" />
+		<put-attribute name="body" value="/WEB-INF/jsp/common/request_submitted.jsp" />
+	</definition>
+	<definition name=".pos.exception" extends="base.definition">
+	<put-attribute name="title" value="Exception"></put-attribute>
+	<put-attribute name="body" value="/WEB-INF/jsp/common/exception_page.jsp"/>	
+	</definition>
+	<definition name=".pos.error" extends="base.definition">
+	<put-attribute name="title" value="Error"></put-attribute>
+	<put-attribute name="body" value="/WEB-INF/jsp/common/error.jsp"/>	
+	</definition>
+	<definition name=".pos.welcome" extends="base.definition">
+	<put-attribute name="title" value="Welcome"></put-attribute>
+	<put-attribute name="body" value="/WEB-INF/jsp/common/welcome.jsp"/>	
+	</definition>
+        </tiles-definitions>

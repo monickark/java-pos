@@ -1,0 +1,519 @@
+/*================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 4.0
+	Author: PIXINVENT
+	Author URL: https://themeforest.net/user/pixinvent/portfolio
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN CSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.mar-bot-20 {
+    margin-bottom: 20px !Important;
+}
+.mar-bot-10 {
+    margin-bottom: 10px !important;
+}
+.mar-top-10 {
+    margin-top: 10px !important;
+}
+
+.mar-top-30 {
+    margin-top: 30px !important;
+}
+
+.mar-top-20 {
+    margin-top: 20px !important;
+}
+
+.pad-bot-20 {
+    padding-bottom: 20px !important;
+}
+.pad-top-10 {
+    padding-top: 10px !important;
+}
+.text-red {
+    color: red;
+}
+.pos-total {
+	display:none;
+}
+#till-table tr:last-child {
+    color: #fff;
+    background: #00bcd4;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+#till-table th {
+    color: #fff !IMPORTANT;
+    background: #ff5a92;
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+#till-table th a {
+    color: #fff;
+}
+.access-modal {
+	height: 100% !important;
+	width: 80%;
+}
+.kbw-signature{ 
+	width: 240px!important; 
+	height: 130px!important; 
+}
+h4.customer-sign{
+	font-size: 18px;
+}
+.customer-details{
+	margin-bottom:0px!important;
+	margin-top:0px!important;
+}
+.modal-terms  {
+	width: 50% !Important;
+    left: 45% !Important;
+    top: 45% !Important
+}
+.modal-terms h2 {
+    margin-bottom: 0em !Important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+td, th {
+    padding: 15px 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.pos-sale h4{
+	margin-bottom: 5px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	color:#00bcd4;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+#till-table {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+span.nav-text {
+    font-weight: 500 !important;
+    color: #4e4d4d;
+}
+.input:-webkit-autofill {transition: background-color 5000s ease-in-out 0s;}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active
+{
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+div.error {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    font-size: 0.8rem;
+    color: #FF4081;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.custom-select label{
+	font-size: 1rem;
+    color: #000;
+    font-weight: 900;
+}
+.custom-select {
+	margin-bottom: 1em;
+}
+
+.custom-select select {
+    background-color: transparent;
+    width: 100%;
+    padding: 0em;
+    border: none;
+    border-radius: 0px;
+    height: 3rem;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.pos-page {
+	padding: 1em !important;
+}
+header .brand-logo {
+    padding: 0px 15px;
+}
+
+header .brand-logo img {
+    height: 60px;
+}
+#login-page label {
+    font-size: 18px;
+    color: #000;
+}
+.modal-brand {
+	height:100px;
+}
+.modal-brand .modal-footer {
+    height: 60px !Important;
+}
+.brand-heading {
+	color:red;
+}
+div#UpdateStatus1 {
+    display: block !important;
+}
+.dd-new {
+   background-color: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.company {
+	text-align: right !Important;
+}
+.pos-table td, .pos-table th {
+    padding: 0px 15px;
+}
+.pos-table .col1 {
+    width: 50% !Important;
+}
+.pos-table .col2 {
+    width: 5% !Important;
+}
+.pos-table .col3 {
+    width: 10% !Important;
+}
+.pos-table .col4 {
+    width: 15% !Important;
+}
+.pos-table .col5 {
+    width: 15% !Important;
+}
+.pos-table .col6 {
+    width: 5% !Important;
+}
+.cust-icons {
+    padding-left: 0em !important;
+    margin-right: 3%;
+    margin-top: -1em;
+}
+.cust-icons i{
+       font-size: 2em !important;
+}
+.start-row {
+    padding: 0em 4em 0em 1em !Important;
+}
+.mar-bot-20 {
+    margin-bottom: 20px !important;
+}
+
+.modal-brand-footer {
+    background-color: transparent;
+    box-shadow: none;
+}
+/*Till*/
+.store-status {
+    color: #ff81ac;
+    margin-top: -0.5em;
+}
+
+/*Breadcrumbs*/
+#breadcrumbs-wrapper .col.m7 {
+    width: 60% !important;
+}
+#breadcrumbs-wrapper .col.m2 {
+    width: 20% !important;
+}
+
+.breadcrumbs-btn {
+    font-weight: 800;
+}
+.breadcrumbs-btn .material-icons {
+    padding-left: 10px;
+}
+.input-field label {
+	font-weight:600;
+}
+.multiple-label {
+	position: absolute !important;
+    top: -26px !important;
+}
+.footer-success {
+    color: green !important;
+    font-weight: 600;
+}
+.footer-fail {
+    color: #ff4081 !important;
+     font-weight: 600;
+}
+.footer-success-col {
+    color: green;
+}
+.label-first {
+    margin-top: -1.5em;
+}
+.label-first , .imei-label span{
+   color: #00bcd4;
+}
+
+
+/*Add Accesories to Inventory*/
+.acces-add-tab {
+    padding-top: 1em !important;
+}
+.imei-label {
+    font-weight: 600;
+
+}
+p {
+    font-family: "lato", sans-serif;
+}
+.modal-inventory-prod-tab p{
+     margin-top: 0px;
+     margin-bottom: 0px;
+}
+.modal-new-customer textarea {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+.heading-form {
+    color: #00bcd4;
+}
+.imei-list {
+    margin-top: 0em;
+    font-weight: 400 !important;
+    font-size: 0.8em !Important;
+}
+
+.modal-inventory-prod-tab {
+    padding-top: 1em !important;
+}
+.modal-inventory-prod-tab .input-field {
+    margin-bottom: 5px !Important;
+}
+
+.modal-inventory-prod-tab .input-field-label {
+    margin-top: 5px !Important;
+}
+
+/*View Product Page*/
+.modal .modal-content {
+    padding: 0px;
+}
+.modal-close{
+    margin-right: 1.5em !Important;
+}
+.collection {
+    margin: 0em !Important;
+}
+.collection-item .row, .profile-page .row{
+    margin-bottom: 0px;
+}
+.pos-cons {
+    box-shadow: none !Important;
+    border: none !Important;
+}
+.collection-item .total {
+    color: #00bcd4;
+    font-size: 1.3em;
+}
+.pos-cons strong{
+    font-weight: 700;
+}
+
+.pos-cons  .collection-item {
+    border-bottom: none !important;
+}
+.modal .modal-footer {
+    height: 90px !Important;
+}
+ul#profile-page-about-details {
+    padding: 1em;
+}
+.collection .collection-item {
+    padding: 8px 8px;
+}
+#task-card .task-card-date {
+    margin-bottom: 10px;
+}
+.modal.modal-fixed-footer .modal-content {
+    height: calc(100% - 0px) !Important;
+}
+.modal-contact-sm  {
+    height: 60% !Important;
+    width: 50% !Important;
+}
+.pad-input {
+    margin: 0em 0em !Important;
+    width: 75% !important;
+}
+.modal-new-brand h4{
+	color: #575757;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+    margin: 25px 0;
+    padding: 0;
+    line-height: 40px;
+    display: block;
+}
+
+.modal-new-brand p{
+    color: #797979;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    text-align: inherit;
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    
+}
+
+.modal.modal-fixed-footer.modal-new-brand {
+       height: 50% !Important;
+    text-align: center !important;
+    width: 30%;
+}
+
+.modal-new-brand .modal-footer {
+    height: 70px !Important;
+}
+
+#task-card .task-cat {
+    margin-left: 0px !Important;
+    margin-right: 32px;
+     padding: 4px 8px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    top: 12px;
+}
+label span{
+    color: rgb(255, 64, 129);
+}
+/*List*/
+.action-icons {   
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    line-height: 26px;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 23px !Important;
+    cursor: pointer;
+}
+.col-no {
+	text-align: center  !Important;
+	float:none  !Important;
+}
+/*Heading*/
+h4.header2 {
+	font-size: 1.2rem;
+    color: #00bcd4;
+    font-weight: 600;
+}
+
+.sweet-alert button {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 
+    3px 1px -2px rgba(0, 0, 0, 0.2) !Important;
+}
+.sweet-alert {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 
+    3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown */
+.dropdown-content li > a, .dropdown-content li > span {
+    line-height: 18px;
+    padding: 9px 16px;
+}
+
+.input-field.col .dropdown-content [type="checkbox"] + label {
+    height: 29px;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #04b1c7;
+}
+
+/* Radio Buttons*/
+.section-radio label {
+	    left: 0.75rem;
+    color: black;
+    font-size: 15px;
+	font-weight:600;
+    top: -26px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: 1rem;
+    cursor: text;
+    transition: transform .2s ease-out;
+    transform-origin: 0% 100%;
+    text-align: initial;
+    transform: translateY(12px);
+    pointer-events: none;
+}
+div#radio {
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+	margin-top: 5px;
+	padding-left: 28px;
+    margin-right: 20px;
+    width: 140px;
+
+}
+
+[type="checkbox"] + label {
+	margin-top: 8px;
+	padding-left: 28px;
+    margin-right: 20px;
+	line-height: 18px;
+}
+
+[type="radio"] + label:before, [type="radio"] + label:after {
+	margin-left:0px;
+}
+
+.switch, .switch * {
+    height: 3rem;
+	    margin-top: 12PX;
+}
+
+
+/*Buttons*/
+.btn, .btn-large, .btn-flat {
+	    padding: 0px 1rem;
+}
+
+i.right {
+    float: right;
+    margin-left: 0px;
+}

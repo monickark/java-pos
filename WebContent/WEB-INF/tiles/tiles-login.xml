@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+        <tiles-definitions>
+        <definition name=".pos.changePassword" extends="base.definition">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login/change_password.jsp" />
+	</definition>
+	 <definition name=".pos.dashboard" extends="base.definition">
+		<put-attribute name="title" value="DashBoard" />
+		<put-attribute name="body" value="/WEB-INF/jsp/dashboard.jsp" />
+	</definition>
+	<definition name=".pos.tillreport" extends="base.definition">
+		<put-attribute name="title" value="Till Report" />
+		<put-attribute name="body" value="/WEB-INF/jsp/report/tillreport.jsp" />
+	</definition>
+        </tiles-definitions>

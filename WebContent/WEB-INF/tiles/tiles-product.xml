@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name=".pos.productMaster" extends="base.definition">
+		<put-attribute name="title" value="Product Master" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/product/product_master.jsp" />
+	</definition>
+	<definition name=".pos.productMasterList" extends="base.definition">
+		<put-attribute name="title" value="Product Master List" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/product/product_master_list.jsp" />
+	</definition>
+	<definition name=".pos.productEdit" extends="base.definition">
+		<put-attribute name="title" value="Edit Product" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/product/edit_product.jsp" />
+	</definition>
+	<definition name=".pos.productInventoryList" extends="base.definition">
+		<put-attribute name="title" value="Product Inventory" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/product/product_inventory.jsp" />
+	</definition>
+	<definition name=".pos.brandmodel" extends="base.definition">
+		<put-attribute name="title" value="Product Inventory" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/product/brandmodel.jsp" />
+	</definition>
+	<definition name=".pos.viewInventory" extends="base.definition">
+		<put-attribute name="title" value="View Product Inventory" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/product/viewInventory.jsp" />
+	</definition>
+</tiles-definitions>

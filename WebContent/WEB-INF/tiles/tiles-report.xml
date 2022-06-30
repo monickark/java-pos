@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name=".pos.salesReport" extends="base.definition">
+		<put-attribute name="title" value="Sales Report " />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/report/salesReport.jsp" />
+	</definition>
+	<definition name=".pos.productReport" extends="base.definition">
+		<put-attribute name="title" value="Sales Report " />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/report/productReport.jsp" />
+	</definition>
+	<definition name=".pos.addBrand" extends="base.definition">
+		<put-attribute name="title" value="Brand" />
+		<put-attribute name="body" value="/WEB-INF/jsp/product/addBrand.jsp" />
+	</definition>
+	<definition name=".pos.addBrandModel" extends="base.definition">
+		<put-attribute name="title" value="Brand Model" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/product/addBrandModel.jsp" />
+	</definition>
+
+	<definition name=".pos.tillReport" extends="base.definition">
+		<put-attribute name="title" value="Till Report " />
+		<put-attribute name="body" value="/WEB-INF/jsp/report/tillReport.jsp" />
+	</definition>
+	<definition name=".pos.customerReport" extends="base.definition">
+		<put-attribute name="title" value="Customer Report " />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/report/customerReport.jsp" />
+	</definition>
+
+	<definition name=".pos.refundReport" extends="base.definition">
+		<put-attribute name="title" value="Refund Report " />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/report/refundReport.jsp" />
+	</definition>
+</tiles-definitions>

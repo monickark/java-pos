@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+        <tiles-definitions>
+        <definition name=".pos.userManagement" extends="base.definition">
+		<put-attribute name="title" value="User Management" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/user/user_management.jsp" />
+	</definition>	
+	<definition name=".pos.branchadmin" extends="base.definition">
+		<put-attribute name="title" value="Branch Admin" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/user/br_admin.jsp" />
+	</definition>
+	<definition name=".pos.ViewSingleStudent" extends="base.definition">
+		<put-attribute name="title" value="Student Details" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/user/view_single_student.jsp" />
+	</definition>
+	<definition name=".pos.ViewSingleParent" extends="base.definition">
+		<put-attribute name="title" value="Parent Details" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/user/view_single_parent.jsp" />
+	</definition>	
+        </tiles-definitions>

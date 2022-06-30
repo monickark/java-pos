@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+        <tiles-definitions>
+		 <definition name=".pos.courseClasslink" extends="base.definition">
+		<put-attribute name="title" value="Course Class Linking" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/course_class_linking.jsp" />
+	</definition>
+        <definition name=".pos.classMasterSetup" extends="base.definition">
+		<put-attribute name="title" value="Class Master Setup" />
+		<put-attribute name="body" value="/WEB-INF/jsp/core/class_master_setup.jsp" />
+	</definition>
+	<definition name=".pos.stdcomb" extends="base.definition">
+		<put-attribute name="title" value="Standard List" />
+		<put-attribute name="body" value="/WEB-INF/jsp/core/std_comb.jsp" />
+	</definition>
+<definition name=".pos.stdsec" extends="base.definition">
+		<put-attribute name="title" value="Standard Section" />
+		<put-attribute name="body" value="/WEB-INF/jsp/core/standard_section.jsp" />
+	</definition>
+	
+	<definition name=".pos.classteacher" extends="base.definition">
+		<put-attribute name="title" value="Class Teacher Allotment" />
+		<put-attribute name="body" value="/WEB-INF/jsp/core/class_teacher.jsp" />
+	</definition>
+	
+	<definition name=".pos.academicCalendarCreate" extends="base.definition">
+		<put-attribute name="title" value="Academic Calendar Create" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/academ_cal_create.jsp" />
+	</definition>	
+	<definition name=".pos.academicCalendarList" extends="base.definition">
+		<put-attribute name="title" value="Academic Calendar List" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/academ_cal_list.jsp" />
+	</definition>	
+	
+	 <definition name=".pos.academicTermdetailsCreate" extends="base.definition">
+		<put-attribute name="title" value="Academic Term Details Create" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/academ_term_details_create.jsp" />
+	</definition>	
+	 <definition name=".pos.academicTermdetailsList" extends="base.definition">
+		<put-attribute name="title" value="Academic Term Details List" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/academ_term_details_list.jsp" />
+	</definition>	
+	
+	
+	 <definition name=".pos.courseMasterCreate" extends="base.definition">
+		<put-attribute name="title" value="Course Master Create" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/course_master_create.jsp" />
+	</definition>	
+	
+	 <definition name=".pos.courseMasterList" extends="base.definition">
+		<put-attribute name="title" value="Course Master List" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/course_master_list.jsp" />
+	</definition>	
+	
+	 <definition name=".pos.studentGroupCreate" extends="base.definition">
+		<put-attribute name="title" value="Student Group Create" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/student_group_master_create.jsp" />
+	</definition>	
+	
+	 <definition name=".pos.studentGroupList" extends="base.definition">
+		<put-attribute name="title" value="Student Group List" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/student_group_master_list.jsp" />
+	</definition>	
+	
+	 <definition name=".pos.addlHolidaysCreate" extends="base.definition">
+		<put-attribute name="title" value="Additional Holidays Create" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/addl_holidays_create.jsp" />
+	</definition>	
+	
+	 <definition name=".pos.addlHolidaysList" extends="base.definition">
+		<put-attribute name="title" value="Additional Holidays List" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/addl_holidays_list.jsp" />
+	</definition>	
+	
+	 <definition name=".pos.holidayGenerate" extends="base.definition">
+		<put-attribute name="title" value="Holiday Generation" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/holiday_generation.jsp" />
+	</definition>	
+ <definition name=".pos.teacherSubLinkList" extends="base.definition">
+		<put-attribute name="title" value="Teacher Subject Link List" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/teacher_sub_link_list.jsp" />
+	</definition>
+	<definition name=".pos.specialClassList" extends="base.definition">
+		<put-attribute name="title" value="Special Class List" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/special_class_list.jsp" />
+	</definition>
+	
+	<definition name=".pos.courseSubLink" extends="base.definition">
+		<put-attribute name="title" value="Course Subject Linking" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/course_sub_link_list.jsp" />
+	</definition>
+	<definition name=".pos.subjectMaster" extends="base.definition">
+		<put-attribute name="title" value="Subject Master" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/subject_master_list.jsp" />
+	</definition>
+	<definition name=".pos.courseTermLinking" extends="base.definition">
+		<put-attribute name="title" value="Course Term Linking" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/courseTermLinkingList.jsp" />
+	</definition> 
+	<definition name=".pos.transportMasterList" extends="base.definition">
+		<put-attribute name="title" value="Transport Master" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/core/transport_master_list.jsp" />
+	</definition>   
+	
+	
+        </tiles-definitions>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tree-template_subreport1" printOrder="Horizontal" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7a2a6681-1efb-4180-bccb-3ba33000057e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="subName" class="java.lang.String"/>
+	<field name="maxSum" class="java.lang.Integer"/>
+	<field name="maxMarkObt" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement x="63" y="0" width="100" height="20" uuid="3689f662-181e-4960-a27f-0962dfc2c8b7"/>
+				<textFieldExpression><![CDATA[$F{subName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="176" y="0" width="100" height="20" uuid="9fd0bc7c-14e1-4964-b1d5-979207633bbf"/>
+				<textFieldExpression><![CDATA[$F{maxSum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="0" width="100" height="20" uuid="d39be26b-6f20-42c9-ad68-2485db872e19"/>
+				<textFieldExpression><![CDATA[$F{maxMarkObt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

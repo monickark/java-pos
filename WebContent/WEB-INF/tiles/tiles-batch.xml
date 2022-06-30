@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+<definition name=".pos.importData" extends="base.definition">
+		<put-attribute name="title" value="Import Data" />
+		<put-attribute name="body" value="/WEB-INF/jsp/batch/import_data.jsp" />
+	</definition>	
+	<definition name=".pos.exportData" extends="base.definition">
+		<put-attribute name="title" value="Import Data" />
+		<put-attribute name="body" value="/WEB-INF/jsp/batch/export_data.jsp" />
+	</definition>	
+	<definition name=".pos.batchStatus" extends="base.definition">
+		<put-attribute name="title" value="Batch Status" />
+		<put-attribute name="body" value="/WEB-INF/jsp/batch/batch_status_list.jsp" />
+	</definition>
+	<definition name=".pos.batchStatusDetails" extends="base.definition">
+		<put-attribute name="title" value="Batch Status" />
+		<put-attribute name="body" value="/WEB-INF/jsp/batch/batch_status_details.jsp" />
+	</definition>
+	<definition name=".pos.importFiles" extends="base.definition">
+		<put-attribute name="title" value="Batch File Upload" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/batch/import_files.jsp" />
+	</definition>
+	<definition name=".pos.exportFiles" extends="base.definition">
+		<put-attribute name="title" value="Batch File Download" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/batch/export_files.jsp" />
+	</definition>
+	<definition name=".pos.runBatch" extends="base.definition">
+		<put-attribute name="title" value="Other Batches" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/batch/updateDB.jsp" />
+	</definition>
+	<definition name=".pos.transferFileDBD" extends="base.definition">
+		<put-attribute name="title" value="File Transfer" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/batch/batch_file_trans_dbd.jsp" />
+	</definition>
+</tiles-definitions>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tree-template" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="883b4d4e-0cf1-4b10-9de7-23eeab85a540">
+	<property name="template.type" value="columnar"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#000000" fontName="Times New Roman" fontSize="50" isBold="false" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Times New Roman" fontSize="18" isBold="false" pdfFontName="Times-Roman"/>
+	<style name="Column header" isDefault="true" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true" pdfFontName="Times-Roman"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#999999">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#CCCCCC">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#CCCCCC">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="3ac9a4f6-add4-46ee-8e7c-00d89367aa78">
+		<parameter name="subName" class="java.lang.String"/>
+		<field name="subName" class="java.lang.String"/>
+		<field name="stuMaxMark" class="java.lang.Integer"/>
+		<field name="stuMinMark" class="java.lang.Integer"/>
+		<field name="stuMarkObt" class="java.lang.Integer"/>
+		<field name="stuResult" class="java.lang.String"/>
+		<field name="avgClassMark" class="java.lang.Float"/>
+		<field name="maxClassMark" class="java.lang.Integer"/>
+		<field name="rank" class="java.lang.Integer"/>
+		<field name="average" class="java.lang.Float"/>
+		<field name="maxMarkObt" class="java.lang.Integer"/>
+	</subDataset>
+	<parameter name="JasperCustomSubReportLocation" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="JasperCustomSubReportDatasource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Gritz Horizons Ltd 1\\Downloads\\spring-jasper-subreport-dual\\spring-jasper-subreport-dual\\src\\main\\resources\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="admisNo" class="java.lang.String"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="stGroup" class="java.lang.String"/>
+	<parameter name="datasource" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<field name="subName" class="java.lang.String"/>
+	<field name="stuMaxMark" class="java.lang.Integer"/>
+	<field name="stuMinMark" class="java.lang.Integer"/>
+	<field name="stuMarkObt" class="java.lang.Integer"/>
+	<field name="stuResult" class="java.lang.String"/>
+	<field name="avgClassMark" class="java.lang.Float"/>
+	<field name="maxClassMark" class="java.lang.Integer"/>
+	<field name="rank" class="java.lang.Integer"/>
+	<field name="average" class="java.lang.Float"/>
+	<field name="maxMarkObt" class="java.lang.Integer"/>
+	<group name="Group2">
+		<groupExpression><![CDATA[(int)($V{REPORT_COUNT}/5)]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" mode="Transparent" x="178" y="0" width="338" height="31" uuid="3834f1c8-a0b8-4140-8d5c-67c5819e0582"/>
+				<textElement verticalAlignment="Middle">
+					<font size="25" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[ASC Independent College]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="249" y="31" width="164" height="20" uuid="1a4f2cf4-ed37-40e7-9934-b231d51ff347"/>
+				<text><![CDATA[Rajaji Nagar, Bangalore]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="51" width="309" height="20" uuid="15234ca3-8545-49d0-bdba-71c33c2ebe55"/>
+				<text><![CDATA[Phone : 080 - 23400290 Web-Site : www.asccollege.in]]></text>
+			</staticText>
+			<image>
+				<reportElement x="3" y="5" width="159" height="75" uuid="94ec3e5e-fb73-4ad5-86b4-e4e40eb6863c"/>
+				<imageExpression><![CDATA["C:\\Users\\Gritz Horizons Ltd 1\\Desktop\\New folder\\pos\\WebContent\\images\\BR001_LOGO.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="56" splitType="Stretch">
+			<textField>
+				<reportElement x="100" y="25" width="100" height="20" uuid="57cb4e6e-675b-4e75-8346-d9311794c45a"/>
+				<textFieldExpression><![CDATA[$P{admisNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="25" width="100" height="20" uuid="dd302879-c9bc-4235-afff-e54d93534522"/>
+				<text><![CDATA[Admission Number :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="25" width="88" height="20" uuid="3f3006fd-5faa-4c74-b7ce-bb6aa6ac24a7"/>
+				<text><![CDATA[Student Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="288" y="25" width="100" height="20" uuid="b35d8486-4802-4947-994f-3dec0508d53d"/>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="374" y="25" width="100" height="20" uuid="63b698d8-699e-4b5d-8f17-fa4d1b419f7e"/>
+				<text><![CDATA[Student Group :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="24" width="100" height="20" uuid="90e0a936-993e-43b4-9dea-aea472a02e06"/>
+				<textFieldExpression><![CDATA[$P{stGroup}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="134" y="0" width="279" height="25" uuid="d340710c-375d-49e9-afe6-334b51e92603"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACADEMIC PERFORMANCE RECORD]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="24" width="555" height="1" uuid="ed6c21ea-9386-47a7-8274-be2f42be0d27"/>
+			</line>
+			<line>
+				<reportElement x="1" y="44" width="553" height="1" uuid="ed4f3296-b947-472e-87b3-28333ba0b278"/>
+			</line>
+			<line>
+				<reportElement x="554" y="25" width="1" height="19" uuid="8e8f026d-f25d-4867-8c95-9a19fa5e3adb"/>
+			</line>
+			<line>
+				<reportElement x="0" y="25" width="1" height="19" uuid="64ce4ab6-d440-4039-be14-779c82767df6"/>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="68">
+			<componentElement>
+				<reportElement key="table 1" mode="Transparent" x="27" y="1" width="500" height="67" uuid="b7df8e8e-1956-4e7c-822d-525da6787722"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 1" uuid="8f66183e-e266-4102-9989-0c1a6d6dd227">
+						<dataSourceExpression><![CDATA[$P{datasource}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="70" uuid="611e4ad9-384f-45d5-8df3-b693c8945c5c">
+						<jr:columnHeader style="table 1_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement style="Column header" x="0" y="0" width="70" height="40" forecolor="#000000" uuid="b9624097-5ab8-49a5-9b44-cd96c3763ebd"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[Subject Name]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement style="Detail" x="0" y="0" width="70" height="30" uuid="564f5754-2fc5-4cec-a89c-cef802207ba4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{subName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="cd745753-f103-413a-936b-a4e381b69069">
+						<jr:columnHeader style="table 1_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement style="Column header" x="0" y="0" width="50" height="40" forecolor="#000000" uuid="30271d28-7ab3-40ab-9e7c-113afb354bfa"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Max Marks]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement style="Detail" x="0" y="0" width="50" height="30" uuid="0b555cfd-162b-44b4-9206-721966528592"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{stuMaxMark}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="0c8f9781-c88f-491c-a099-86c1f24633d5">
+						<jr:columnHeader style="table 1_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement style="Column header" x="0" y="0" width="50" height="40" forecolor="#000000" uuid="807efd4d-c75e-4443-bf04-2f44780f8226"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Min Marks]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement style="Detail" x="0" y="0" width="50" height="30" uuid="ed1b5a93-5e91-432e-90d2-4a0db5b8caab"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{stuMinMark}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="9da0785f-9277-4876-a75f-8afa423f800d">
+						<jr:columnHeader style="table 1_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement style="Column header" x="0" y="0" width="50" height="40" forecolor="#000000" uuid="a9ba0493-dd59-44ed-bf3a-a0f3b483bd01"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Marks Obt]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement style="Detail" x="0" y="0" width="50" height="30" uuid="5923bcff-f7a7-44a5-8ec3-f739c399d623"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{stuMarkObt}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="14e07e97-9014-45b3-abb5-f7204ac5c0cd">
+						<jr:columnHeader style="table 1_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement style="Column header" x="0" y="0" width="50" height="40" forecolor="#000000" uuid="b59e099a-3a3c-449f-8759-60f4a381b779"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Result]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement style="Detail" x="0" y="0" width="50" height="30" uuid="ad9c5acc-8f1b-4586-9603-fe50e256f2f6"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{stuResult}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="3c7a75f0-8034-4b82-a67c-cb97f1d4311f">
+						<jr:columnHeader style="table 1_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement style="Column header" x="0" y="0" width="50" height="40" forecolor="#000000" uuid="3678a84e-9859-4704-a483-8020c0a60382"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Average]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement style="Detail" x="0" y="0" width="50" height="30" uuid="858ad109-a579-4247-a4ad-bd924e924147"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{avgClassMark}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="001f4dc6-8f4f-45fe-a53e-14acb3c9aa51">
+						<jr:columnHeader style="table 1_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement style="Column header" x="0" y="0" width="50" height="40" forecolor="#000000" uuid="d910c6dc-ada0-408a-bfbb-0e6fe4dd9163"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Class Highest]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement style="Detail" x="0" y="0" width="50" height="30" uuid="08472473-888e-4317-a83d-8c32f7d4e46b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{maxClassMark}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="336f0093-957f-45b8-b08a-255b66cde5df">
+						<jr:columnHeader style="table 1_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement style="Column header" x="0" y="0" width="50" height="40" forecolor="#000000" uuid="2e766a01-1025-4a84-8b8e-d7bf06f1e8a5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Rank]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement style="Detail" x="0" y="0" width="50" height="30" uuid="0e7a56ad-24c9-4c3a-a254-e114a630a862"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{rank}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="60ed9ce2-c783-49ed-9b84-ea1eda1c116b">
+						<jr:columnHeader style="table 1_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement style="Column header" x="0" y="0" width="50" height="40" forecolor="#000000" uuid="c79a9dc1-5e30-4f2a-a08a-01892effd815"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Std Average]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement style="Detail" x="0" y="0" width="50" height="30" uuid="343c0358-3043-4191-9509-bb62418c3836"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{average}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="6720ba0c-f094-4962-93e5-239444cf4782">
+						<jr:columnHeader style="table 1_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement style="Column header" x="0" y="0" width="50" height="40" forecolor="#000000" uuid="2f5ccad8-913d-4807-b006-583251abfd55"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Std Highest]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table_TD" height="30" rowSpan="1">
+							<textField>
+								<reportElement style="Detail" x="0" y="0" width="50" height="30" uuid="1402ad33-0ed7-4ed0-adbe-a15d1b718b78"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{maxMarkObt}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+		<band height="69">
+			<subreport>
+				<reportElement x="0" y="37" width="552" height="32" uuid="8e56a70d-5040-4ffb-86b0-2a9cfda9779d"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource ($P{JasperCustomSubReportDatasource}.getData())]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{JasperCustomSubReportLocation}]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement x="178" y="14" width="167" height="20" uuid="be10f350-4ba5-4eac-90d1-00c9900f5498"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERFORMANCE ANALYSIS]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

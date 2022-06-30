@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file>
+	
+		<recordFormat>
+			<rectype>UserLink</rectype>
+			<!--For product use 'P' & for Custom use 'C' -->
+			<recordProductOrCustom>PROD</recordProductOrCustom>
+			<fieldList>
+				<field_Name_Product>S.No</field_Name_Product>
+				<!-- <filed_Name_Custom>Admis no</filed_Name_Custom> -->
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,E-Mail,Land-LineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Integer</field_Type>
+				<field_Size>4</field_Size>
+				 <field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom> 
+				<field_Mandatory_Custom_Criteria>S.No
+				</field_Mandatory_Custom_Criteria>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<default_Value></default_Value>
+				<field_Order>1</field_Order>
+				<field_Property_Name>SerialNoForExcelUpdate</field_Property_Name>
+				<field_Class_Name>UserLink:UserVO</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>instId</field_Name_Product>
+				<!-- <filed_Name_Custom>Admis no</filed_Name_Custom> -->
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,E-Mail,Land-LineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SimpleText</field_Type>
+				<field_Size>3</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				 <exclude_From_Dwnld>YES</exclude_From_Dwnld> 
+				<default_Value>ASC</default_Value>
+				<field_Order>1</field_Order>
+				<field_Property_Name>instId</field_Property_Name>
+				<field_Class_Name>UserLink:UserVO</field_Class_Name>
+				<field_Primary_Key>Y</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> 
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>User Id</field_Name_Product>
+				<filed_Name_Custom>userId</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,E-Mail,Land-LineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>N</default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>userId</field_Property_Name>
+				<field_Class_Name>UserLink:UserVO</field_Class_Name>
+				<field_Primary_Key>Y</field_Primary_Key>
+				<field_Unique_key>Y</field_Unique_key> 
+					<field_DB_ColumnName>USER_ID</field_DB_ColumnName>
+				
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Password</field_Name_Product>
+				<!-- <filed_Name_Custom>Year</filed_Name_Custom> -->
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,E-Mail,Land-LineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>10</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<cocd_Type>std</cocd_Type>				
+				<default_Value>MYS</default_Value>
+				<field_Order>2</field_Order>
+				<field_Property_Name>password</field_Property_Name>
+				<field_Class_Name>UserVO</field_Class_Name>
+				
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>Profile Group</field_Name_Product>
+				<!-- <filed_Name_Custom>Year</filed_Name_Custom> -->
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,E-Mail,Land-LineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SimpleText</field_Type>
+				<field_Size>10</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<cocd_Type>std</cocd_Type>				
+				<default_Value>STU</default_Value>
+				<field_Order>2</field_Order>
+				<field_Property_Name>profileGroup</field_Property_Name>
+				<field_Class_Name>UserLink</field_Class_Name>
+				
+			</fieldList>
+						
+			<fieldList>
+				<field_Name_Product>User Menu Profile</field_Name_Product>
+				<filed_Name_Custom>userMenuProfile</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,E-Mail,Land-LineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SimpleText</field_Type>
+				<field_Size>115</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>STUDT</default_Value>
+				 <exclude_From_Dwnld>NO</exclude_From_Dwnld> 
+				<field_Order>20</field_Order>
+				<field_Property_Name>userMenuProfile</field_Property_Name>
+				<field_Class_Name>UserLink</field_Class_Name>
+				
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Link Id</field_Name_Product>
+				<filed_Name_Custom>linkId</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,E-Mail,Land-LineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+			<!--  <exclude_From_Dwnld>YES</exclude_From_Dwnld>  -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>linkId</field_Property_Name>
+				<field_Class_Name>UserLink</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Role</field_Name_Product>
+				<filed_Name_Custom>role</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,E-Mail,Land-LineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SimpleText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>Stud</default_Value>
+				 <exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>role</field_Property_Name>
+				<field_Class_Name>UserLink</field_Class_Name>
+				<!-- <field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>											
+		</recordFormat>
+		
+
+</file>

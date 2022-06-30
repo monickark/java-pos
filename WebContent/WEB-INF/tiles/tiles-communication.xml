@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+        <tiles-definitions>
+        <!-- Communication Package-->
+<definition name=".pos.noticeBoardList" extends="base.definition">
+		<put-attribute name="title" value="Notice Board " />
+		<put-attribute name="body" value="/WEB-INF/jsp/communication/noticeBoardList.jsp" />
+	</definition>
+	
+	<definition name=".pos.alertList" extends="base.definition">
+		<put-attribute name="title" value="Alert " />
+		<put-attribute name="body" value="/WEB-INF/jsp/communication/alertList.jsp" />
+	</definition>
+		<definition name=".pos.smsRequest" extends="base.definition">
+		<put-attribute name="title" value="Sms Request " />
+		<put-attribute name="body" value="/WEB-INF/jsp/communication/smsRequest.jsp" />
+	</definition>
+	<definition name=".pos.smsHistory" extends="base.definition">
+		<put-attribute name="title" value="Sms History " />
+		<put-attribute name="body" value="/WEB-INF/jsp/communication/smsHistory.jsp" />
+	</definition>
+	<definition name=".pos.smsDetail" extends="base.definition">
+		<put-attribute name="title" value="Sms Details " />
+		<put-attribute name="body" value="/WEB-INF/jsp/communication/smsDetailsList.jsp" />
+	</definition>
+	
+        </tiles-definitions>

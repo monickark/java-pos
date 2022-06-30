@@ -1,0 +1,3092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file>
+<recordFormat>
+
+<rectype>CollegeStudentDetails</rectype>
+			<!--For product use 'PROD' & for Custom use 'CUST' -->
+			<recordProductOrCustom>CUST</recordProductOrCustom>			
+		 <fieldList>
+				<field_Name_Product>S.No</field_Name_Product>
+				<filed_Name_Custom>S.No</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>  -->
+				<field_Type>Integer</field_Type>
+				<field_Size>4</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>S.No
+				</field_Mandatory_Custom_Criteria>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<default_Value></default_Value>
+				<field_Order>1</field_Order>
+				<field_Property_Name>SerialNoForExcelUpdate</field_Property_Name>
+				<field_Class_Name>StudentMasterVO:StudentInfoVO:PrevAcademicDetailsVO:ParentDetailsVO:CommunicationDetailsVO</field_Class_Name>				
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList>
+				<!--<fieldList>
+				<field_Name_Product>instId</field_Name_Product>
+				<filed_Name_Custom>Admis no</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>SimpleText</field_Type>
+				<field_Size>8</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria></field_Mandatory_Custom_Criteria>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<default_Value>ASC</default_Value>
+				<field_Order>1</field_Order>
+				<field_Property_Name>instId</field_Property_Name>
+				<field_Class_Name>StudentMasterVO:StudentInfoVO:PrevAcademicDetailsVO:ParentDetailsVO:CommunicationDetailsVO</field_Class_Name>
+				<field_Primary_Key>Y</field_Primary_Key>
+				 <field_Unique_key>N</field_Unique_key> 
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>branchId</field_Name_Product>
+				<filed_Name_Custom>Year</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>SimpleText</field_Type>
+				<field_Size>8</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<cocd_Type>std</cocd_Type>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld> 
+				<default_Value>BR001</default_Value>
+				<field_Order>2</field_Order>
+				<field_Property_Name>branchId</field_Property_Name>
+				<field_Class_Name>StudentMasterVO:StudentInfoVO:PrevAcademicDetailsVO:ParentDetailsVO:CommunicationDetailsVO</field_Class_Name>
+				<field_Primary_Key>Y</field_Primary_Key>
+				 <field_Unique_key>N</field_Unique_key> 
+			</fieldList> -->
+			<fieldList>
+				<field_Name_Product>Academic Term</field_Name_Product>
+				<filed_Name_Custom>Academic Term</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>COCD</field_Type>
+				<cocd_Type>ACTRM</cocd_Type>				
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>2013-14</default_Value>
+				 <exclude_From_Dwnld>YES</exclude_From_Dwnld> 
+				<field_Order>5</field_Order>
+				<field_Property_Name>academicYear</field_Property_Name>
+				<field_Class_Name>StudentMasterVO:StudentInfoVO</field_Class_Name>		
+				<field_DB_ColumnName>ACADEMIC_YEAR</field_DB_ColumnName>		
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Student Admis No</field_Name_Product>
+				<filed_Name_Custom>Admisssion No</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>16</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>N</default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>6</field_Order>
+				<field_Property_Name>studentAdmisNo</field_Property_Name>
+				<field_Class_Name>StudentMasterVO:StudentInfoVO:PrevAcademicDetailsVO:ParentDetailsVO:CommunicationDetailsVO</field_Class_Name>				
+				<field_Unique_key>Y</field_Unique_key>				
+				<field_DB_ColumnName>STUDENT_ADMIS_NO</field_DB_ColumnName>
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Roll No</field_Name_Product>
+				<filed_Name_Custom>Roll No</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>16</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Roll Number
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>6</field_Order>
+				<field_Property_Name>rollno</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>Course</field_Name_Product>
+				<filed_Name_Custom>Course</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>CORS</field_Type>			
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+			 	 <default_Value>PUC Science</default_Value> 
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>				
+				<field_Order>20</field_Order>
+				<field_Property_Name>course</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>				
+				<field_Unique_key>N</field_Unique_key>
+				<field_DB_ColumnName>COURSE</field_DB_ColumnName>
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Term</field_Name_Product>
+				<filed_Name_Custom>Term</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>COCD</field_Type>
+				<cocd_Type>TRM</cocd_Type>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>7</field_Order>
+				<field_Property_Name>standard</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<field_DB_ColumnName>STANDARD</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Section</field_Name_Product>
+				<filed_Name_Custom>Section</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+			<!-- 	<field_Type>COCD</field_Type> -->
+				<cocd_Type>SEC</cocd_Type>
+				<!-- <field_Size>5</field_Size> -->
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>A</default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>8</field_Order>
+				<field_Property_Name>sec</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<field_DB_ColumnName>SEC</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>combination</field_Name_Product>
+				<filed_Name_Custom>Combination</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+			<!-- 	<cocd_Type>COMB</cocd_Type> -->
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld> 
+				<field_Order>9</field_Order>
+				<field_Property_Name>combination</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<field_DB_ColumnName>COMBINATION</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Student Name</field_Name_Product>
+				<filed_Name_Custom>Student Name</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Name</field_Type>
+				<field_Size>60</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>N</default_Value>
+				 <exclude_From_Dwnld>YES</exclude_From_Dwnld> 
+				<field_Order>10</field_Order>
+				<field_Property_Name>studentName</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>First Name</field_Name_Product>
+				<filed_Name_Custom>FirstName</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>30</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				 <exclude_From_Dwnld>NO</exclude_From_Dwnld> 
+				<field_Order>20</field_Order>
+				<field_Property_Name>firstName</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Middle Name</field_Name_Product>
+				<filed_Name_Custom>Middle Name</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>30</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!-- <exclude_From_Dwnld>YES</exclude_From_Dwnld> -->
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld> 
+				<field_Order>20</field_Order>
+				<field_Property_Name>middleName</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Last Name</field_Name_Product>
+				<filed_Name_Custom>Last Name</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>30</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>lastName</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Gender</field_Name_Product>
+				<filed_Name_Custom>Gender</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>COCD</field_Type>
+				<cocd_Type>GEN</cocd_Type>
+				<!-- <field_Size>5</field_Size> -->
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				 <exclude_From_Dwnld>NO</exclude_From_Dwnld> 
+				<field_Order>11</field_Order>
+				<field_Property_Name>gender</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<field_DB_ColumnName>GENDER</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>			
+			<fieldList>
+				<field_Name_Product>DOB</field_Name_Product>
+				<filed_Name_Custom>DOB</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Date</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>dob</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+				<fieldList>
+				<field_Name_Product>Blood Group</field_Name_Product>
+				<filed_Name_Custom>bloodGroup</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>7</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>bloodGroup</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<field_DB_ColumnName>BLOOD_GROUP</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>Caste Category</field_Name_Product>
+				<filed_Name_Custom>Caste Category</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>COCD</field_Type>
+				<cocd_Type>CAGRP</cocd_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>				
+				 <exclude_From_Dwnld>NO</exclude_From_Dwnld> 
+				<field_Order>20</field_Order>
+				<field_Property_Name>casteCategory</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<field_DB_ColumnName>CASTE_CATEGORY</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Caste</field_Name_Product>
+				<filed_Name_Custom>Caste</filed_Name_Custom>
+			<!-- 	fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Text</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				 <exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>caste</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Religion</field_Name_Product>
+				<filed_Name_Custom>Religion</filed_Name_Custom>
+			<!-- 	fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>COCD</field_Type>
+				<cocd_Type>REL</cocd_Type>
+				
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				 <exclude_From_Dwnld>NO</exclude_From_Dwnld> 
+				<field_Order>20</field_Order>
+				<field_Property_Name>religion</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<field_DB_ColumnName>RELIGION</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			 <fieldList>
+				<field_Name_Product>Nationality</field_Name_Product>
+				<filed_Name_Custom>nationality</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SimpleText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>Indian</default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>nationality</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>	
+				<fieldList>
+				<field_Name_Product>Mother Tongue</field_Name_Product>
+				<filed_Name_Custom>Mother Tongue</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherTongue</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 	
+			<fieldList>
+				<field_Name_Product>HouseName</field_Name_Product>
+				<filed_Name_Custom>houseName</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>12</field_Order>
+				<field_Property_Name>houseName</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>				
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Second Language</field_Name_Product>
+				<filed_Name_Custom>Second Lang</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+			<!-- 	<field_Type>COCD</field_Type>
+				<cocd_Type>LANG2</cocd_Type> -->
+				
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>13</field_Order>
+				<field_Property_Name>secoundLang</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<field_DB_ColumnName>SECOND_LANG</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Third Language</field_Name_Product>
+				<filed_Name_Custom>Third Lang</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+			<!-- 	<field_Type>COCD</field_Type> -->
+			<!-- 	<cocd_Type>LANG3</cocd_Type> -->
+				<!-- <field_Type>SpecialText</field_Type> -->
+				<!-- <field_Size>1</field_Size> -->
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>14</field_Order>
+				<field_Property_Name>thirdLang</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<field_DB_ColumnName>THIRD_LANG</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Elective-1</field_Name_Product>
+				<filed_Name_Custom>Elective-1</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+			<!-- 	<field_Type>COCD</field_Type>
+				<cocd_Type>OSUB</cocd_Type> -->
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>45</field_Order>
+				<field_Property_Name>elective1</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<field_DB_ColumnName>ELECTIVE_1</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Elective-2</field_Name_Product>
+				<filed_Name_Custom>elective-2</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<!-- <field_Type>SpecialText</field_Type>
+				<cocd_Type>OSUB</cocd_Type> -->
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>16</field_Order>
+				<field_Property_Name>elective2</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<field_DB_ColumnName>ELECTIVE_2</field_DB_ColumnName>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>ReligiousStudies</field_Name_Product>
+				<filed_Name_Custom>religious Studies</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>17</field_Order>
+				<field_Property_Name>religiousStudies</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+					
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Transfered</field_Name_Product>
+				<filed_Name_Custom>transfered</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>1</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>18</field_Order>
+				<field_Property_Name>transfered</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Tc RefNo</field_Name_Product>
+				<filed_Name_Custom>tcRefNo</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>19</field_Order>
+				<field_Property_Name>tcRefNo</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Account No</field_Name_Product>
+				<filed_Name_Custom>accountNo</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>30</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>accountNo</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Reg No</field_Name_Product>
+				<filed_Name_Custom>Reg No</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>16</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Reg No
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>regNo</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Medium</field_Name_Product>
+				<filed_Name_Custom>Medium</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>16</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Reg No
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>medium</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<!-- <fieldList>
+				<field_Name_Product>Transfer Date</field_Name_Product>
+				<filed_Name_Custom>Transfer Date</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>Date</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+			 	 <default_Value>2015-07-01</default_Value> 
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>transferDate</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList> -->
+			 
+			<!-- Course Variant Category is only for II PUC only,for I PUC comment this -->
+			<!--  <fieldList>
+				<field_Name_Product>Course Variant Category</field_Name_Product>
+				<filed_Name_Custom>Course Variant Category</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>COCD</field_Type>
+				<cocd_Type>CVC</cocd_Type>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+			 	 <default_Value></default_Value> 				
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>courseVariantCat</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>				
+				<field_Unique_key>N</field_Unique_key>
+					<field_DB_ColumnName>COURSE_VARIANT_CAT</field_DB_ColumnName>
+			</fieldList>  -->
+			<!-- Course Variant Category is only for II PUC only,for I PUC comment this -->
+			 <fieldList>
+				<field_Name_Product>Course Variant</field_Name_Product>
+				<filed_Name_Custom>Course Variant</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>  -->
+				<field_Type>COCD</field_Type>
+				<cocd_Type>CV1</cocd_Type>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+			 	 <default_Value></default_Value> 
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>				
+				<field_Order>20</field_Order>
+				<field_Property_Name>courseVariant</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>			
+				<field_Unique_key>N</field_Unique_key>
+					<field_DB_ColumnName>COURSE_VARIANT</field_DB_ColumnName>
+			</fieldList>  
+			<!-- <fieldList>
+				<field_Name_Product>Student Type</field_Name_Product>
+				<filed_Name_Custom>Transfer Date</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+			 	 <default_Value></default_Value> 
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>				
+				<field_Order>20</field_Order>
+				<field_Property_Name>transferDate</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList>  -->
+			<fieldList>
+				<field_Name_Product>Student Type</field_Name_Product>
+				<filed_Name_Custom>Student Type</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+			 	 <default_Value></default_Value> 
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>				
+				<field_Order>20</field_Order>
+				<field_Property_Name>studentType</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>			
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Student Batch</field_Name_Product>
+				<filed_Name_Custom>Student Batch</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+			 	 <default_Value> </default_Value> 
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>				
+				<field_Order>20</field_Order>
+				<field_Property_Name>studentBatch</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>				
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Lab Batch</field_Name_Product>
+				<filed_Name_Custom>Lab Batch</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+			 	 <default_Value> </default_Value> 
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>				
+				<field_Order>20</field_Order>
+				<field_Property_Name>labBatch</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>			
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Reason For Leaving</field_Name_Product>
+				<filed_Name_Custom>Reason For Leaving</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>80</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+			 	 <default_Value></default_Value> 
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>				
+				<field_Order>20</field_Order>
+				<field_Property_Name>reasonForLeaving</field_Property_Name>
+				<field_Class_Name>StudentMasterVO</field_Class_Name>				
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList> 
+			
+			
+						
+			
+			
+			
+			
+		   <fieldList>
+				<field_Name_Product>Admission Date</field_Name_Product>
+				<filed_Name_Custom>admis_date</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>				
+				<field_Order>20</field_Order>
+				<field_Property_Name>admisDate</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>				
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList>  
+			<fieldList>
+				<field_Name_Product>Admitted To Class</field_Name_Product>
+				<filed_Name_Custom>admittedToClass</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>16</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>admittedToClass</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>			
+			
+			 <fieldList>
+				<field_Name_Product>Place Of Birth</field_Name_Product>
+				<filed_Name_Custom>placeOfBirth</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>placeOfBirth</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			
+			<fieldList>
+				<field_Name_Product>Birth Certificate Verified</field_Name_Product>
+				<filed_Name_Custom>birthCertiVer</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>4</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>birthCertiVer</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<!-- <fieldList>
+				<field_Name_Product>Birth Certificate Ref No</field_Name_Product>
+				<filed_Name_Custom>birthCertiVer</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>birthCertiRefNo</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList> -->
+		
+			<fieldList>
+				<field_Name_Product>Id Mark-1</field_Name_Product>
+				<filed_Name_Custom>idMark1</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>idMark1</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>				
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Id Mark-2</field_Name_Product>
+				<filed_Name_Custom>idMark2</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>idMark1</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mobile No</field_Name_Product>
+				<filed_Name_Custom>Mobile No</filed_Name_Custom>
+			<!-- 	fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				 <exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>mobileNo</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>E-Mail</field_Name_Product>
+				<filed_Name_Custom>E-Mail</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>25</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>email</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>
+			
+			<fieldList>
+				<field_Name_Product>Fee Pay Type</field_Name_Product>
+				<filed_Name_Custom>feePayType</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>feePayType</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Sub-Caste</field_Name_Product>
+				<filed_Name_Custom>SubCaste</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>subCaste</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Admis Category</field_Name_Product>
+				<filed_Name_Custom>Admis-Category</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>admisCategory</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+		
+			<fieldList>
+				<field_Name_Product>Reference Person Name</field_Name_Product>
+				<filed_Name_Custom>Reference Person Name</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>refPersonName</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Foreign Passport Having?</field_Name_Product>
+				<filed_Name_Custom>Foreign Passport Having?</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>Y</default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>foreignPassFlg</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Passport No</field_Name_Product>
+				<filed_Name_Custom>Passport No</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>passportNo</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Passport Validity</field_Name_Product>
+				<filed_Name_Custom>Passport Validity</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>passportValidity</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Passport-Place Of Issue</field_Name_Product>
+				<filed_Name_Custom>Passport-Place Of Issue</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>pass_placeOfIssue</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Tutorial/School of Studying</field_Name_Product>
+				<filed_Name_Custom>Tutorial/School of Studying</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>tutOrColStudying</field_Property_Name>
+				<field_Class_Name>StudentInfoVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			
+			<fieldList>
+				<field_Name_Product>Father Salutation</field_Name_Product>
+				<filed_Name_Custom>fatherSalut</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SimpleText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>Mr</default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherSalut</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			
+			
+			<fieldList>
+				<field_Name_Product>Father Name</field_Name_Product>
+				<filed_Name_Custom>Father Name</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Name</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherName</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Religion</field_Name_Product>
+				<filed_Name_Custom>fatherReligion</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>25</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherReligion</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Mother tongue</field_Name_Product>
+				<filed_Name_Custom>fatherMothertongue</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>16</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherMothertongue</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<!--  <fieldList>
+				<field_Name_Product>fatherPhotoRefno</field_Name_Product>
+				<filed_Name_Custom>fatherPhotoRefno</filed_Name_Custom>
+				 fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>Integer</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>07-03-2013</default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherPhotoRefno</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList>  -->
+			<fieldList>
+				<field_Name_Product>Father Qualification</field_Name_Product>
+				<filed_Name_Custom>fatherQual</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherQual</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Occupation Description</field_Name_Product>
+				<filed_Name_Custom>fatherOccuDes</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherOccuDes</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Annual Income</field_Name_Product>
+				<filed_Name_Custom>fatherAnnualIncome</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>10</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherAnnualIncome</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Mobile No</field_Name_Product>
+				<filed_Name_Custom>fatherMobileNo</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>MobileNumber</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherMobileNo</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Email</field_Name_Product>
+				<filed_Name_Custom>fatherEmail</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherEmail</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Company</field_Name_Product>
+				<filed_Name_Custom>fatherCompany</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherCompany</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Office Add-1</field_Name_Product>
+				<filed_Name_Custom>fatherOffAdd1</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherOffAdd1</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Office Add-2</field_Name_Product>
+				<filed_Name_Custom>fatherOffAdd2</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherOffAdd2</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Office Add-3</field_Name_Product>
+				<filed_Name_Custom>fatherOffAdd3</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherOffAdd3</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father City</field_Name_Product>
+				<filed_Name_Custom>fatherCity</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherCity</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father State</field_Name_Product>
+				<filed_Name_Custom>fatherState</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherState</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Pincode</field_Name_Product>
+				<filed_Name_Custom>fatherPincode</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>10</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherPincode</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Office Telephone</field_Name_Product>
+				<filed_Name_Custom>fatherOffTele</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherOffTele</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Old Student</field_Name_Product>
+				<filed_Name_Custom>fatherOldStudent</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>1</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherOldStudent</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Father Passed Out</field_Name_Product>
+				<filed_Name_Custom>fatherPassedOut</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>fatherPassedOut</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Salutation</field_Name_Product>
+				<filed_Name_Custom>motherSalut</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>Mrs</default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherSalut</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Name</field_Name_Product>
+				<filed_Name_Custom>Mother Name</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Name</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherName</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Religion</field_Name_Product>
+				<filed_Name_Custom>motherReligion</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>25</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherReligion</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Mother Tongue</field_Name_Product>
+				<filed_Name_Custom>motherMothertongue</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherMothertongue</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<!--  <fieldList>
+				<field_Name_Product>motherPhotoRefno</field_Name_Product>
+				<filed_Name_Custom>motherPhotoRefno</filed_Name_Custom>
+				fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>Integer</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>Dd</default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherPhotoRefno</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList>  -->
+			<fieldList>
+				<field_Name_Product>Mother Qualification</field_Name_Product>
+				<filed_Name_Custom>motherQual</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherQual</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Occupation Description</field_Name_Product>
+				<filed_Name_Custom>motherOccDes</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherOccDes</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Annual Income</field_Name_Product>
+				<filed_Name_Custom>motherAnnualIncome</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>10</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherAnnualIncome</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Mobile No</field_Name_Product>
+				<filed_Name_Custom>Mother Mobile No</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>MobileNumber</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherMobileNo</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Email</field_Name_Product>
+				<filed_Name_Custom>motherEmail</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherEmail</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Company</field_Name_Product>
+				<filed_Name_Custom>motherCompany</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherCompany</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Office Add-1</field_Name_Product>
+				<filed_Name_Custom>motherOffAdd1</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherOffAdd1</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Office Add-2</field_Name_Product>
+				<filed_Name_Custom>motherOffAdd2</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherOffAdd2</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Office Add-3</field_Name_Product>
+				<filed_Name_Custom>motherOffAdd3</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherOffAdd3</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			
+			<fieldList>
+				<field_Name_Product>Mother City</field_Name_Product>
+				<filed_Name_Custom>motherCity</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherCity</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Pincode</field_Name_Product>
+				<filed_Name_Custom>motherPincode</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>10</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherPincode</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother State</field_Name_Product>
+				<filed_Name_Custom>motherState</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherState</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Office Telephone</field_Name_Product>
+				<filed_Name_Custom>motherOffTele</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherOffTele</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Old Student</field_Name_Product>
+				<filed_Name_Custom>motherOldStudent</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>1</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherOldStudent</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Mother Passed Out</field_Name_Product>
+				<filed_Name_Custom>motherPassedOut</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>motherPassedOut</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Local Guardian</field_Name_Product>
+				<filed_Name_Custom>localGuardian</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>1</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>localGuardian</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Guardian Salutation</field_Name_Product>
+				<filed_Name_Custom>guardianSalut</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>5</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>Mr</default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardianSalut</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Guardian Name</field_Name_Product>
+				<filed_Name_Custom>guardianName</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardianName</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>		
+			<fieldList>
+				<field_Name_Product>Relationship</field_Name_Product>
+				<filed_Name_Custom>Relationship</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>relationShip</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Guardian Occupation Description</field_Name_Product>
+				<filed_Name_Custom>Guardian Occupation Description</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardOccDes</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>Guardian Annual Income</field_Name_Product>
+				<filed_Name_Custom>Guardian Annual Income</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardAnnualIncome</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>			
+			<fieldList>
+				<field_Name_Product>Guardian Add-1</field_Name_Product>
+				<filed_Name_Custom>guardianAdd1</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardianAdd1</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Guardian Add-2</field_Name_Product>
+				<filed_Name_Custom>guardianAdd2</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardianAdd2</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Guardian Add-3</field_Name_Product>
+				<filed_Name_Custom>guardianAdd3</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardianAdd3</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Guardian City</field_Name_Product>
+				<filed_Name_Custom>guardianCity</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardianCity</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			
+			<fieldList>
+				<field_Name_Product>Guardian State</field_Name_Product>
+				<filed_Name_Custom>guardianState</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardianState</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Guardian Pincode</field_Name_Product>
+				<filed_Name_Custom>guardianPincode</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>10</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardianPincode</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Guardian Landline No</field_Name_Product>
+				<filed_Name_Custom>guardianLandlineNo</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardianLandlineNo</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			
+			<fieldList>
+				<field_Name_Product>Guardian Mobile No</field_Name_Product>
+				<filed_Name_Custom>guardianMobileNo</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardianMobileNo</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>
+			<fieldList>
+				<field_Name_Product>Guardian E-Mail</field_Name_Product>
+				<filed_Name_Custom>Guardian E-Mail</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>EMail</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>guardEmail</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>			
+										
+		
+			
+			
+			<fieldList>
+				<field_Name_Product>Residence Add-1</field_Name_Product>
+				<filed_Name_Custom>Residence Add-1</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Address</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>residenceAdd1</field_Property_Name>
+				<field_Class_Name>CommunicationDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>Residence Add-2</field_Name_Product>
+				<filed_Name_Custom>Residence Add-2</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Address</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>residenceAdd2</field_Property_Name>
+				<field_Class_Name>CommunicationDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>Residence Add-3</field_Name_Product>
+				<filed_Name_Custom>Residence Add-3</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Address</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>B.lore</default_Value>				
+				<field_Order>20</field_Order>
+				<field_Property_Name>residenceAdd3</field_Property_Name>
+				<field_Class_Name>CommunicationDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>City</field_Name_Product>
+				<filed_Name_Custom>city</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Name</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>Banglore</default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>rcity</field_Property_Name>
+				<field_Class_Name>CommunicationDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>state</field_Name_Product>
+				<filed_Name_Custom>state</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SimpleText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value>Dd</default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>rstate</field_Property_Name>
+				<field_Class_Name>CommunicationDetailsVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>Pincode</field_Name_Product>
+				<filed_Name_Custom>pincode</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>10</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>rpincode</field_Property_Name>
+				<field_Class_Name>CommunicationDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>Residence Telephone</field_Name_Product>
+				<filed_Name_Custom>residenceTele</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Phone</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>residenceTele</field_Property_Name>
+				<field_Class_Name>CommunicationDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>	
+			 <fieldList>
+				<field_Name_Product>Emerg Contact No</field_Name_Product>
+				<filed_Name_Custom>Emerg Contact No</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Phone</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>emergContactNo</field_Property_Name>
+				<field_Class_Name>CommunicationDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>	
+			<fieldList>
+				<field_Name_Product>Mobile No For Sms</field_Name_Product>
+				<filed_Name_Custom>mobileNoSms</filed_Name_Custom>
+				<!-- fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>MobileNumber</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<!--<exclude_From_Dwnld>NO</exclude_From_Dwnld>-->
+				<field_Order>20</field_Order>
+				<field_Property_Name>mobileNoSms</field_Property_Name>
+				<field_Class_Name>CommunicationDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key>-->
+				<!--<field_Unique_key>N</field_Unique_key>-->
+			</fieldList>				
+			
+			
+				<fieldList>
+				<field_Name_Product>Previous Studied Std</field_Name_Product>
+				<filed_Name_Custom>Previous Studied Std</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>prevStudiedStd</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Previous School</field_Name_Product>
+				<filed_Name_Custom>Prev School Name</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Name</field_Type>
+				<field_Size>45</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld> 
+				<field_Order>20</field_Order>
+				<field_Property_Name>prevSchoolName</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+					<fieldList>
+				<field_Name_Product>Previous School Add1</field_Name_Product>
+				<filed_Name_Custom>prevSchoolAdd1</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>prevSchoolAdd1</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>  
+			<fieldList>
+				<field_Name_Product>Previous School Add2</field_Name_Product>
+				<filed_Name_Custom>prevSchoolAdd2</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>prevSchoolAdd2</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>  
+			<fieldList>
+				<field_Name_Product>Previous School Add 3</field_Name_Product>
+				<filed_Name_Custom>prevSchoolAdd3</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>prevSchoolAdd3</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>  
+			<!-- <fieldList>
+				<field_Name_Product>Previous Studied Year</field_Name_Product>
+				<filed_Name_Custom>Previous Studied Year</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value> </default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>prevStudiedYear</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList>   -->
+			 <fieldList>
+				<field_Name_Product>Pre Studied Year</field_Name_Product>
+				<filed_Name_Custom>Pre Studied Year</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>prevStudiedYear</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Marks Obtained</field_Name_Product>
+				<filed_Name_Custom>Marks Obtained</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Integer</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>markObtPrevStd</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Maximum Marks</field_Name_Product>
+				<filed_Name_Custom>Maximum Marks</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Integer</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>maxMarks</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 			
+			<fieldList>
+				<field_Name_Product>Percentage Obtained</field_Name_Product>
+				<filed_Name_Custom>Percentage Obtained</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Double</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>percentageObtained</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Medium of Instruction</field_Name_Product>
+				<filed_Name_Custom>Medium of Instruction</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>mediumOfInst</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+		
+			<!-- <fieldList>
+				<field_Name_Product>Previous Mark</field_Name_Product>
+				<filed_Name_Custom>markObtPrevStd</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>markObtPrevStd</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList>   -->
+			<fieldList>
+				<field_Name_Product>Board Exam Flag</field_Name_Product>
+				<filed_Name_Custom>Board Exam Flag</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>1</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>boardExamFlg</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			
+			<fieldList>
+				<field_Name_Product>Board Exam Reg No</field_Name_Product>
+				<filed_Name_Custom>Board Exam Reg No</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>boardExamRegNo</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			
+				<fieldList>
+				<field_Name_Product>Board</field_Name_Product>
+				<filed_Name_Custom>Board</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>board</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			
+			
+			<fieldList>
+				<field_Name_Product>No of Attempts</field_Name_Product>
+				<filed_Name_Custom>No of Attempts</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>Integer</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>noOfAttempts</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			
+			<fieldList>
+				<field_Name_Product>Appeared For CET</field_Name_Product>
+				<filed_Name_Custom>Appeared For CET</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>appearedForCET</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			
+			<fieldList>
+				<field_Name_Product>Transfer Certi. Ref. No</field_Name_Product>
+				<filed_Name_Custom>transCertificateRefno</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>transCertificateRefno</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList>  
+			<fieldList>
+				<field_Name_Product>MarkSheet Ref. No</field_Name_Product>
+				<filed_Name_Custom>marksheetRefno</filed_Name_Custom>
+				<!-- fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type> -->
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>YES</exclude_From_Dwnld>
+				<!-- <exclude_From_Dwnld>NO</exclude_From_Dwnld> -->
+				<field_Order>20</field_Order>
+				<field_Property_Name>marksheetRefno</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<!--<field_Primary_Key>N</field_Primary_Key> -->
+				<!--<field_Unique_key>N</field_Unique_key> -->
+			</fieldList> 
+			
+			
+			<!-- <fieldList>
+				<field_Name_Product>Extra Activities(other than sports)</field_Name_Product>
+				<filed_Name_Custom>Extra Activities(other than sports)</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>extraActivities</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Sports Entity</field_Name_Product>
+				<filed_Name_Custom>Sports Entity</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>COCD</field_Type>
+				
+				<cocd_Type>ENT</cocd_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>sportsEntity</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<field_DB_ColumnName>SPORTS_ENTITY</field_DB_ColumnName>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			
+			</fieldList> 
+			<fieldList>
+				<field_Name_Product>Sports Details</field_Name_Product>
+				<filed_Name_Custom>Sports Details</filed_Name_Custom>
+				fieed type should be : Date,Mobile Number,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>SpecialText</field_Type>
+				<field_Size>15</field_Size>
+				<field_Mandatory_Product>NO</field_Mandatory_Product>
+				<field_Mandatory_Custom>NO</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>sportsDetails</field_Property_Name>
+				<field_Class_Name>PrevAcademicDetailsVO</field_Class_Name>
+				<field_Primary_Key>N</field_Primary_Key>
+				<field_Unique_key>N</field_Unique_key>
+			</fieldList> 	
+			 -->
+			
+												
+			<!-- <fieldList>
+				<field_Name_Product>Parent Id</field_Name_Product>
+				<filed_Name_Custom>Parent Id</filed_Name_Custom>
+				fieed type should be : Date,MobileNumber,Pincode,Integer,Text,SpecialText, 
+					SimpleText,EMail,LandLineNumber,Double,Boolean,Year,COCD and if the 
+					type is COCD then there is no need of <field_Size>,but include <cocd_Type>
+				<field_Type>SpecialText</field_Type>
+				<field_Size>16</field_Size>
+				<field_Mandatory_Product>YES</field_Mandatory_Product>
+				<field_Mandatory_Custom>YES</field_Mandatory_Custom>
+				<field_Mandatory_Custom_Criteria>Name
+				</field_Mandatory_Custom_Criteria>
+				<default_Value></default_Value>
+				<exclude_From_Dwnld>NO</exclude_From_Dwnld>
+				<field_Order>20</field_Order>
+				<field_Property_Name>parentId</field_Property_Name>
+				<field_Class_Name>ParentDetailsVO</field_Class_Name>				
+				<field_Unique_key>N</field_Unique_key>
+				<field_Unique_ColumnName>PARENT_ID</field_Unique_ColumnName>
+			</fieldList> -->
+			
+			
+
+
+</recordFormat>
+
+</file>

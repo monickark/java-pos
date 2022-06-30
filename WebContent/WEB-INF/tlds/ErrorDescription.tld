@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<info>Error code and Description</info>
+	<uri>ErrorCodeDescription</uri>
+	<tag>
+		<name>description</name>
+		<tagclass>com.pos.common.customTag.ErrorDescriptionTag</tagclass>
+		<info>Substring function.</info>
+		<attribute>
+			<name>type</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>code</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>description</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>result</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>refNos</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+</taglib> 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+        <tiles-definitions>
+        <!-- Admin Package-->
+	<definition name=".pos.accessoriesList" extends="base.definition">
+		<put-attribute name="title" value="Accessories List " />
+		<put-attribute name="body" value="/WEB-INF/jsp/accessories/accessoriesList.jsp" />
+	</definition>
+	<definition name=".pos.category" extends="base.definition">
+		<put-attribute name="title" value="Category " />
+		<put-attribute name="body" value="/WEB-INF/jsp/accessories/category.jsp" />
+	</definition>
+	
+	
+	    </tiles-definitions>
